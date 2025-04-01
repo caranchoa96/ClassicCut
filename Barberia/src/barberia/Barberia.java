@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package barberia;
-
+//JOPTION PARA CUANDO TERMINAS EL REGISTRO Y INICIO DE SESION
+// JOPTION PANE PARA DESPUES DE LO ULTIMO DE USUARIO Y PARA ESPECIALIDAD DE EMPLEADO DESPUES DE INICIAR SESION
 /**
  *
  * @author Usuario
@@ -15,7 +16,7 @@ public class Barberia {
      */
     public static void main(String[] args) {
         MenuPrincipal a = new MenuPrincipal();
-        a.setVisible(true); 
+        a.setVisible(true);
     }
     
 }

@@ -15,9 +15,10 @@ public class Barberia {
      * @param args the command line arguments
      */
     public static void main(String[] args)  {
+        Bienvenidoa e = new Bienvenidoa();
         MenuPrincipal a = new MenuPrincipal();
-        RegistroInicio e = new RegistroInicio();
-        a.cambioPanel(e);
+        a.cambioPanel(e,486,533);
+
         a.setVisible(true);
     }
     

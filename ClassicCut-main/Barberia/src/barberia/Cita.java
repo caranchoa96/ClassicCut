@@ -14,4 +14,11 @@ public class Cita {
     String servicio;
     String encargado;
     String cliente;
+    Cita(String hora, String precio, String servicio, String encargado, String cliente){
+        this.hora = hora;
+        this.precio = precio;
+        this.servicio = servicio;
+        this.encargado = encargado;
+        this.cliente = cliente;
+    }
 }

@@ -40,11 +40,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         movil.setLayout(movilLayout);
         movilLayout.setHorizontalGroup(
             movilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 559, Short.MAX_VALUE)
+            .addGap(0, 640, Short.MAX_VALUE)
         );
         movilLayout.setVerticalGroup(
             movilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 518, Short.MAX_VALUE)
+            .addGap(0, 530, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -72,10 +72,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
     public JPanel getMovil() {
         return movil;
     }
-    public void cambioPanel(JPanel i){
-        i.setSize(1200,500);
+    public void cambioPanel(JPanel panelAgregado, int alto, int ancho){
+
+        panelAgregado.setSize(alto,ancho);
+
         movil.removeAll();
-        movil.add(i);
+        movil.add(panelAgregado);
         movil.revalidate();
         movil.repaint();
         setVisible(true);

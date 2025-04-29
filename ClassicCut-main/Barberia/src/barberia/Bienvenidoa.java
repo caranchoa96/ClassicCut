@@ -36,7 +36,7 @@ public class Bienvenidoa extends javax.swing.JPanel {
 
         jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        jButton3.setText("Soy usuario");
+        jButton3.setText("Soy cliente");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -93,26 +93,29 @@ public class Bienvenidoa extends javax.swing.JPanel {
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        MenuPrincipal a = new MenuPrincipal();
         RegistroInicio e = new RegistroInicio();
-        a.cambioPanel(e);
+        MenuPrincipal a = new MenuPrincipal();
+        
+        a.cambioPanel(e,527,525);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        MenuPrincipal a = new MenuPrincipal();
         RegistroInicio e = new RegistroInicio();
-        a.cambioPanel(e);
+        MenuPrincipal a = new MenuPrincipal();
+        
+        a.cambioPanel(e,527,525);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        MenuPrincipal a = new MenuPrincipal();
         RegistroInicio e = new RegistroInicio();
-        a.cambioPanel(e);
+        MenuPrincipal a = new MenuPrincipal();
+        
+        a.cambioPanel(e,527,525);
     }//GEN-LAST:event_jButton1ActionPerformed
 
 

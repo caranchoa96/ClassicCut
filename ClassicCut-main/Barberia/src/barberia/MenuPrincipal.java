@@ -32,7 +32,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         movil = new javax.swing.JPanel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         movil.setBackground(new java.awt.Color(51, 51, 51));
         movil.setForeground(new java.awt.Color(51, 51, 51));

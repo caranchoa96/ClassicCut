@@ -20,7 +20,7 @@ public class MenuUsuario extends javax.swing.JPanel {
         initComponents();
         ListaDePrecios cosas = new ListaDePrecios();
         for(String a : ListaDePrecios.servicios){
-            sb.append(a).append(",");
+            sb.append(a).append("\n");
         }
         
         jTextArea1.setText(sb.toString());

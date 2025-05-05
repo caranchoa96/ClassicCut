@@ -4,6 +4,8 @@
  */
 package barberia;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
@@ -135,15 +137,34 @@ public class RegistroInicio extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Cliente clienteActual = new Cliente();
+        MenuPrincipal a = new MenuPrincipal();
         for(Cliente cliente: Cliente.clientes){
             if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
                 JOptionPane.showMessageDialog(null, "Sesion iniciada");
                 clienteActual.nombre = getjTextField1();
                 clienteActual.contraseña = getjTextField2();
+                System.exit(0);
                 break;
+                
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    public JLabel getjLabel3() {
+        return jLabel3;
+    }
+
+    public void setjLabel3(JLabel jLabel3) {
+        this.jLabel3 = jLabel3;
+    }
+
+    public JButton getjButton2() {
+        return jButton2;
+    }
+
+    public void setjButton2(JButton jButton2) {
+        this.jButton2 = jButton2;
+    }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         Cliente clienteActual = new Cliente();

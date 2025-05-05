@@ -5,6 +5,10 @@
 package barberia;
 //JOPTION PARA CUANDO TERMINAS EL REGISTRO Y INICIO DE SESION
 //JOPTION PANE PARA DESPUES DE LO ULTIMO DE USUARIO Y PARA ESPECIALIDAD DE EMPLEADO DESPUES DE INICIAR SESION
+
+import javax.swing.JFrame;
+
+
 /**
  *
  * @author Usuario
@@ -15,11 +19,12 @@ public class Barberia {
      * @param args the command line arguments
      */
     public static void main(String[] args)  {
-        Bienvenidoa e = new Bienvenidoa();
-        MenuPrincipal a = new MenuPrincipal();
-        a.cambioPanel(e,486,533);
-
-        a.setVisible(true);
+        Bienvenidoa1 i = new Bienvenidoa1();
+        i.setVisible(true);
     }
-    
+    static void cerrarSesion(JFrame a){
+        Bienvenidoa1 i = new Bienvenidoa1();
+        a.dispose();
+        i.setVisible(true);
+    }
 }

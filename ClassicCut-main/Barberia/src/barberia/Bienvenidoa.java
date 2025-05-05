@@ -107,6 +107,7 @@ public class Bienvenidoa extends javax.swing.JPanel {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         RegistroInicio e = new RegistroInicio();
         MenuPrincipal a = new MenuPrincipal();
+        e.getjLabel3().setText("Registro Empleado");
         
         a.cambioPanel(e,527,525);
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -115,6 +116,8 @@ public class Bienvenidoa extends javax.swing.JPanel {
         RegistroInicio e = new RegistroInicio();
         MenuPrincipal a = new MenuPrincipal();
         
+        e.getjLabel3().setText("Acceso Administrador");
+        e.getjButton2().setVisible(false);
         a.cambioPanel(e,527,525);
     }//GEN-LAST:event_jButton1ActionPerformed
 

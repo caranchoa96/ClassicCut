@@ -14,7 +14,7 @@ import javax.swing.JFrame;
  * @author Usuario
  */
 public class Barberia {
-
+    static String SesionActual;
     /**
      * @param args the command line arguments
      */

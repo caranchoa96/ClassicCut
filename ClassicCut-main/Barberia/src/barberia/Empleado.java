@@ -4,11 +4,14 @@
  */
 package barberia;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author E304
  */
 public class Empleado extends Usuario{
+    static ArrayList<Empleado> empleados = new ArrayList<>();
     public Empleado(String nombre, String contraseña) {
         super(nombre, contraseña);
     }

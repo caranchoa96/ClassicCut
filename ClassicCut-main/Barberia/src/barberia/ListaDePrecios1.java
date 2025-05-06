@@ -5,6 +5,7 @@
 package barberia;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import javax.swing.SpinnerNumberModel;
 
 /**
@@ -22,9 +23,11 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
      */
     public ListaDePrecios1() {
         initComponents();
+        setTitle("Por favor escoja un servicio");
         modeloSpinner = new SpinnerNumberModel();
-        modeloSpinner.setMaximum(12);
         modeloSpinner.setMinimum(0);
+        modeloSpinner.setMaximum(12);
+        
         jSpinner1.setModel(modeloSpinner);
     }
 
@@ -78,7 +81,6 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Por favor escoja un servicio");
         setBackground(new java.awt.Color(51, 51, 51));
         setForeground(java.awt.Color.darkGray);
 
@@ -720,12 +722,14 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         confirmarCita = new MenuUsuario1();
-        if(jTextField1.getText().matches("^([0-2][0-9]|3[0-1])(\\/|-)(0[1-9]|1[0-2])\\2(\\d{4})$")){
+        int fecha = (int) modeloSpinner.getValue();
+        if(jTextField1.getText().matches("^([0-2][0-9]|3[0-1])(\\/|-)(0[1-9]|1[0-2])\\2(\\d{4})$")&&fecha>0&&fecha<13&&precio!=0){
             confirmarCita.setFecha(jTextField1.getText());
-            hora = modeloSpinner.getValue()+":00 "+ jComboBox1.getSelectedItem();
+            hora = fecha+":00 "+ jComboBox1.getSelectedItem();
             confirmarCita.setHora(hora);
             confirmarCita.setVisible(true);
-
+        }else{
+            JOptionPane.showMessageDialog(null,"Por favor rellene todos los campos");
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -766,37 +770,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ListaDePrecios1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ListaDePrecios1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ListaDePrecios1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ListaDePrecios1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ListaDePrecios1().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

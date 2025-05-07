@@ -177,7 +177,6 @@ public class RegistroInicio1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if(Barberia.SesionActual.equals("Admin")){    
-            System.out.println(jTextField1.getText());
             if(jTextField1.getText().equals("admin")&&jTextField2.getText().equals("Uzumymw")){
                 HistorialAdministrador1 a = new HistorialAdministrador1();
                 this.dispose();
@@ -238,17 +237,12 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         }
         if(Barberia.SesionActual.equals("Empleado")){    
 
-            if(!getjTextField1().equals("")&&!getjTextField2().equals("")){
-                Empleado nuevoEmpleado = new Empleado(getjTextField1(),getjTextField2());
+            if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi")){
+                Empleado nuevoEmpleado = new Empleado(getjTextField1());
                 Empleado.empleados.add(nuevoEmpleado);
                 JOptionPane.showMessageDialog(null, "Empleado agregado con exito");
                 jTextField1.setText("");
                 jTextField2.setText("");
-                ListaDePrecios1 a = new ListaDePrecios1();
-                this.dispose();
-                a.setVisible(true);
-            }else{
-                JOptionPane.showMessageDialog(null, "Error de nombre o contraseña");
             }
         }
         

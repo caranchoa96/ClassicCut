@@ -12,8 +12,8 @@ import java.util.ArrayList;
  */
 public class Empleado extends Usuario{
     static ArrayList<Empleado> empleados = new ArrayList<>();
-    public Empleado(String nombre, String contraseña) {
-        super(nombre, contraseña);
+    public Empleado(String nombre) {
+        super(nombre);
     }
     Empleado(){}
 }

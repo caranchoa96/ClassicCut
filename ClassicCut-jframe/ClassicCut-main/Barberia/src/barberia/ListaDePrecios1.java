@@ -748,6 +748,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Barberia.cerrarSesion(this);
         if(confirmarCita.isVisible()){confirmarCita.dispose();}
+        ListaDePrecios1.servicios.clear();
     }//GEN-LAST:event_jButton1ActionPerformed
     public void addServicio(String servicio,int precios){
         if(servicios.isEmpty()){

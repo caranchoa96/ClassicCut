@@ -10,27 +10,29 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Usuario
  */
-public class HistorialAdministrador1 extends javax.swing.JFrame {
+public class MenuEmpleado1 extends javax.swing.JFrame {
 DefaultTableModel modeloCitas;
+static String encargadoe;
     /**
-     * Creates new form HistorialAdministrador1
+     * Creates new form MenuEmpleado1
      */
-    public HistorialAdministrador1() {
-        String col[] = {"Hora","Precio","Servicio","Encargado","Cliente","Fecha"};
+    public MenuEmpleado1() {
+        setTitle(encargadoe);
+        String col[] = {"Hora","Precio","Servicio","Cliente","Fecha"};
         
         modeloCitas = new DefaultTableModel(col, 0);
         initComponents();
         
         for (int i = 0; i < Cita.listaCitas.size(); i++){
-            String hora = Cita.listaCitas.get(i).getHora();
-            String precio = Cita.listaCitas.get(i).getPrecio();
-            String servicio = Cita.listaCitas.get(i).getServicio();
-            String encargado = Cita.listaCitas.get(i).getEncargado();
-            String cliente = Cita.listaCitas.get(i).getCliente();
-            String fecha = Cita.listaCitas.get(i).getFecha();
-            Object[] data = {hora, precio, servicio,encargado,cliente,fecha};
-            modeloCitas.addRow(data);
-        
+            if(Cita.listaCitas.get(i).getEncargado().equals(encargadoe)){
+                String hora = Cita.listaCitas.get(i).getHora();
+                String precio = Cita.listaCitas.get(i).getPrecio();
+                String servicio = Cita.listaCitas.get(i).getServicio();
+                String cliente = Cita.listaCitas.get(i).getCliente();
+                String fecha = Cita.listaCitas.get(i).getFecha();
+                Object[] data = {hora, precio, servicio,cliente,fecha};
+                modeloCitas.addRow(data);
+            }
 
         }
     }
@@ -48,9 +50,9 @@ DefaultTableModel modeloCitas;
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setForeground(new java.awt.Color(51, 51, 51));
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -59,47 +61,32 @@ DefaultTableModel modeloCitas;
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Citas agendadas");
-
-        jButton1.setText("Volver");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jLabel1.setText("Citas pendientes");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 651, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(285, 285, 285)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 551, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(62, 62, 62))
+                .addGap(201, 201, 201))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jButton1))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 491, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,19 +96,12 @@ DefaultTableModel modeloCitas;
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Bienvenidoa1 a = new Bienvenidoa1();
-        this.dispose();
-        a.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     /**
      * @param args the command line arguments
      */
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

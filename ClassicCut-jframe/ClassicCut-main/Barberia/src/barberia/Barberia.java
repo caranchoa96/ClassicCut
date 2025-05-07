@@ -22,6 +22,12 @@ public class Barberia {
     public static void main(String[] args)  {
         Bienvenidoa1 i = new Bienvenidoa1();
         i.setVisible(true);
+        Empleado nuevoEmpleado = new Empleado("Joseph");
+        Empleado.empleados.add(nuevoEmpleado);
+        nuevoEmpleado = new Empleado("Gabriel");
+        Empleado.empleados.add(nuevoEmpleado);
+        nuevoEmpleado = new Empleado("Santiago");
+        Empleado.empleados.add(nuevoEmpleado);
     }
     
     static void cerrarSesion(JFrame a){

@@ -182,7 +182,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                 this.dispose();
                 a.setVisible(true);
             }
-        }else{
+        }if(Barberia.SesionActual.equals("Cliente")){
         for(Cliente cliente: Cliente.clientes){
             if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
                 JOptionPane.showMessageDialog(null, "Bienvenido, "+ jTextField1.getText());
@@ -194,14 +194,22 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                     a.setVisible(true);
                 }
                 if(ae==JOptionPane.NO_OPTION){
-                    
+                    VerCitas1.clientee = getjTextField1();
+                    VerCitas1 a = new VerCitas1();
+                    a.setVisible(true);
                 }
-                //clienteActual.nombre = getjTextField1();
-                //clienteActual.contraseña = getjTextField2();
                 break;
 
             }
         }
+        }
+        if(Barberia.SesionActual.equals("Empleado")){
+            if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi")){
+                MenuEmpleado1.encargadoe = getjTextField1();
+                MenuEmpleado1 mostrarCitasEmpleado = new MenuEmpleado1();
+                
+                mostrarCitasEmpleado.setVisible(true);
+            }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -237,12 +245,10 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         }
         if(Barberia.SesionActual.equals("Empleado")){    
 
-            if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi")){
+            if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi")&&!getjTextField1().equals("Joseph")&&!getjTextField1().equals("Gabriel")&&!getjTextField1().equals("Santiago")){
                 Empleado nuevoEmpleado = new Empleado(getjTextField1());
                 Empleado.empleados.add(nuevoEmpleado);
                 JOptionPane.showMessageDialog(null, "Empleado agregado con exito");
-                jTextField1.setText("");
-                jTextField2.setText("");
             }
         }
         

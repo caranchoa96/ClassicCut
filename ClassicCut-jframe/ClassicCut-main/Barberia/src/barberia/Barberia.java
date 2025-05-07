@@ -15,6 +15,7 @@ import javax.swing.JFrame;
  */
 public class Barberia {
     static String SesionActual;
+    static String ClienteActual;
     /**
      * @param args the command line arguments
      */
@@ -24,7 +25,7 @@ public class Barberia {
     }
     
     static void cerrarSesion(JFrame a){
-        Bienvenidoa1 i = new Bienvenidoa1();
+        RegistroInicio1 i = new RegistroInicio1();
         a.dispose();
         i.setVisible(true);
     }

@@ -20,6 +20,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
      */
     public RegistroInicio1() {
         initComponents();
+        setTitle("Acceso");
         
     }
 
@@ -175,35 +176,64 @@ public class RegistroInicio1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Cliente clienteActual = new Cliente();
-        
+        if(Barberia.SesionActual.equals("Admin")){    
+            System.out.println(jTextField1.getText());
+            if(jTextField1.getText().equals("admin")&&jTextField2.getText().equals("Uzumymw")){
+                HistorialAdministrador1 a = new HistorialAdministrador1();
+                this.dispose();
+                a.setVisible(true);
+            }
+        }else{
         for(Cliente cliente: Cliente.clientes){
             if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
-                JOptionPane.showMessageDialog(null, "Sesion iniciada");
-                clienteActual.nombre = getjTextField1();
-                clienteActual.contraseña = getjTextField2();
+                JOptionPane.showMessageDialog(null, "Bienvenido, "+ jTextField1.getText());
+                int ae = JOptionPane.showConfirmDialog(null, "¿Desea agendar una nueva cita?","Sesion iniciada", JOptionPane.YES_NO_OPTION);
+                
+                if(ae==JOptionPane.YES_OPTION){
+                    ListaDePrecios1 a = new ListaDePrecios1();
+                    this.dispose();
+                    a.setVisible(true);
+                }
+                if(ae==JOptionPane.NO_OPTION){
+                    
+                }
+                //clienteActual.nombre = getjTextField1();
+                //clienteActual.contraseña = getjTextField2();
                 break;
 
             }
         }
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        if(Barberia.SesionActual.equals("Cliente")){    
-            Cliente clienteActual = new Cliente();
-            if(!getjTextField1().equals("")&&!getjTextField2().equals("")){
-                Cliente nuevoCliente = new Cliente(getjTextField1(),getjTextField2());
-                Cliente.clientes.add(nuevoCliente);
-                clienteActual.nombre = getjTextField1();
-                clienteActual.contraseña = getjTextField2();
-                JOptionPane.showMessageDialog(null, "Cliente agregado con exito");
-                jTextField1.setText("");
-                jTextField2.setText("");
-                ListaDePrecios1 a = new ListaDePrecios1();
-                this.dispose();
-                a.setVisible(true);
+        boolean ae = false;
+        if(Barberia.SesionActual.equals("Cliente")){
+            for (Cliente cliente : Cliente.clientes) {
+                if(cliente.nombre.equals(getjTextField1())){
+                    JOptionPane.showMessageDialog(null, "Usuario ya registrado");
+                    jTextField1.setText("");
+                    jTextField2.setText("");
+                    ae = true;
+                    break;
+                }
+            }
+            if(!getjTextField1().equals("")&&!getjTextField2().equals("")&&ae==false){
+                
+                        Cliente nuevoCliente = new Cliente(getjTextField1(),getjTextField2());
+                        Cliente.clientes.add(nuevoCliente);
+                        Barberia.ClienteActual = getjTextField1();
+                        JOptionPane.showMessageDialog(null, "Cliente agregado con exito");
+                        jTextField1.setText("");
+                        jTextField2.setText("");
+                        ListaDePrecios1 a = new ListaDePrecios1();
+                        this.dispose();
+                        a.setVisible(true);
+                
             }else{
-                JOptionPane.showMessageDialog(null, "Error de nombre o contraseña");
+                if(ae==false){
+                    JOptionPane.showMessageDialog(null, "Error de nombre o contraseña");
+                }
             }
         }
         if(Barberia.SesionActual.equals("Empleado")){    
@@ -221,6 +251,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Error de nombre o contraseña");
             }
         }
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

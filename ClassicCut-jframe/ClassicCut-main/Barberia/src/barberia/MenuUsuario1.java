@@ -11,31 +11,45 @@ import javax.swing.JOptionPane;
  * @author Usuario
  */
 public class MenuUsuario1 extends javax.swing.JFrame {
-    StringBuilder sb = new StringBuilder();
+    StringBuilder sbConfirmacion = new StringBuilder();
+    StringBuilder sbCita = new StringBuilder();
+    String fecha;
+    String hora;
+    String servicio;
     /**
      * Creates new form MenuUsuario1
      */
     public MenuUsuario1() {
         initComponents();
-        ListaDePrecios1 cosas = new ListaDePrecios1();
-        
+        int i=0;
             for(String a : ListaDePrecios1.servicios){
-                sb.append(a).append("\n");
+                sbConfirmacion.append(a).append("\n");
             }
-        
-            jTextArea1.setText(sb.toString());
-            jTextField2.setText(""+cosas.hora);
+            jTextArea1.setText(sbConfirmacion.toString());
+            for(String e : ListaDePrecios1.servicios){
+                if(i==0){
+                    sbCita.append(e);
+                    i++;
+                }else{
+                    sbCita.append("+").append(e);
+                    i++;
+                }
+            }
+            servicio = sbCita.toString();
+            
 
             jTextField5.setText(""+ListaDePrecios1.precio);
 
     }
     public void setFecha( String huu) {
         this.jTextField3.setText(huu);
+        fecha = huu;
     }
 
 
     public void setHora(String jTextField2) {
         this.jTextField2.setText(jTextField2);
+        hora = jTextField2;
     }
 
     /**
@@ -111,6 +125,11 @@ public class MenuUsuario1 extends javax.swing.JFrame {
         jTextField5.setText("40.000");
 
         jButton2.setText("Ok");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
@@ -195,6 +214,20 @@ public class MenuUsuario1 extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        //Cita -> Empleado.nombre (lista escoger empleado)
+        //Cita -> Cliente.nombre
+        //Cita -> ListaDePrecios.Servicio (sb)
+        //Cita -> ListaDePrecios.hora y fecha
+        //Cita -> ListaDePrecios.Precio
+        System.out.println(servicio);
+        Cita nuevaCita = new Cita(hora,""+ListaDePrecios1.precio,servicio,"Ethelvaldo",Barberia.ClienteActual,fecha);
+        Cita.listaCitas.add(nuevaCita);
+        JOptionPane.showMessageDialog(null, "Cita agendada exitosamente");
+        this.dispose();
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

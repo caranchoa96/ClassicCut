@@ -19,8 +19,11 @@ public class RegistroInicio1 extends javax.swing.JFrame {
      * Creates new form RegistroInicio1
      */
     public RegistroInicio1() {
+
         initComponents();
         setTitle("Acceso");
+        setLocationRelativeTo(null);
+        
         
     }
 
@@ -211,6 +214,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                 mostrarCitasEmpleado.setVisible(true);
             }
         }
+        JOptionPane.showMessageDialog(null, "Por favor rellene todos los campos");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

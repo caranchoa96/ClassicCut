@@ -16,19 +16,33 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     static ArrayList<String> servicios = new ArrayList<>();
     static int precio = 0;
     String hora= "";
-    SpinnerNumberModel modeloSpinner;
+    SpinnerNumberModel modeloSpinnerHora = new SpinnerNumberModel();
+    SpinnerNumberModel modeloSpinnerDia= new SpinnerNumberModel();
+    SpinnerNumberModel modeloSpinnerMes= new SpinnerNumberModel();
+    SpinnerNumberModel modeloSpinnerAño= new SpinnerNumberModel();
     MenuUsuario1 confirmarCita;
     /**
      * Creates new form ListaDePrecios1
      */
     public ListaDePrecios1() {
+
         initComponents();
+        setLocationRelativeTo(null);
         setTitle("Por favor escoja un servicio");
-        modeloSpinner = new SpinnerNumberModel();
-        modeloSpinner.setMinimum(0);
-        modeloSpinner.setMaximum(12);
+        modeloSpinnerHora = new SpinnerNumberModel();
+        modeloSpinnerDia = new SpinnerNumberModel();
+        modeloSpinnerMes = new SpinnerNumberModel();
+        modeloSpinnerAño = new SpinnerNumberModel();
+        modeloSpinnerHora.setMinimum(0);
+        modeloSpinnerHora.setMaximum(12);
+        modeloSpinnerDia.setMinimum(5);
+        modeloSpinnerDia.setMaximum(31);
+        modeloSpinnerMes.setMinimum(8);
+        modeloSpinnerMes.setMaximum(12);
+        modeloSpinnerAño.setMinimum(2025);
+        modeloSpinnerAño.setMaximum(2025);
         
-        jSpinner1.setModel(modeloSpinner);
+        jSpinner1.setModel(modeloSpinnerHora);
     }
 
     /**
@@ -79,6 +93,9 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox65 = new javax.swing.JCheckBox();
         jSpinner1 = new javax.swing.JSpinner();
         jButton1 = new javax.swing.JButton();
+        dia = new javax.swing.JSpinner();
+        mes = new javax.swing.JSpinner();
+        año = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
@@ -364,6 +381,12 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
             }
         });
 
+        dia.setModel(modeloSpinnerDia);
+
+        mes.setModel(modeloSpinnerMes);
+
+        año.setModel(modeloSpinnerAño);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -432,10 +455,19 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(111, 111, 111)
-                .addComponent(jButton1)
-                .addGap(31, 31, 31))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(111, 111, 111)
+                        .addComponent(jButton1)
+                        .addGap(31, 31, 31))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(dia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(mes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(año, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(191, 191, 191))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -446,7 +478,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                     .addComponent(jButton1))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel7)
@@ -466,7 +498,13 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                         .addComponent(jCheckBox23)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCheckBox24)
-                        .addGap(142, 142, 142))
+                        .addGap(142, 142, 142)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel8)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -506,13 +544,12 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                                     .addComponent(jCheckBox8)
                                     .addComponent(jCheckBox19)))
                             .addComponent(jLabel3))
-                        .addGap(64, 64, 64)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(dia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(año, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(53, 53, 53)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
@@ -722,14 +759,14 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         confirmarCita = new MenuUsuario1();
-        int fecha = (int) modeloSpinner.getValue();
-        if(jTextField1.getText().matches("^([0-2][0-9]|3[0-1])(\\/|-)(0[1-9]|1[0-2])\\2(\\d{4})$")&&fecha>0&&fecha<13&&precio!=0){
+        int horascroll = (int) modeloSpinnerHora.getValue();
+        if(jTextField1.getText().matches("^([0-2][0-9]|3[0-1])(\\/|-)(0[1-9]|1[0-2])\\2(\\d{4})$")&&horascroll>0&&horascroll<13&&precio!=0){
             confirmarCita.setFecha(jTextField1.getText());
-            hora = fecha+":00 "+ jComboBox1.getSelectedItem();
+            hora = horascroll+":00 "+ jComboBox1.getSelectedItem();
             confirmarCita.setHora(hora);
             confirmarCita.setVisible(true);
         }else{
-            JOptionPane.showMessageDialog(null,"Por favor rellene todos los campos");
+            JOptionPane.showMessageDialog(null,"Por favor, rellene todos los campos.");
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -748,7 +785,8 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Barberia.cerrarSesion(this);
         if(confirmarCita.isVisible()){confirmarCita.dispose();}
-        ListaDePrecios1.servicios.clear();
+        servicios.clear();
+        precio = 0;
     }//GEN-LAST:event_jButton1ActionPerformed
     public void addServicio(String servicio,int precios){
         if(servicios.isEmpty()){
@@ -774,6 +812,8 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JSpinner año;
+    private javax.swing.JSpinner dia;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JCheckBox jCheckBox1;
@@ -813,5 +853,6 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JSpinner mes;
     // End of variables declaration//GEN-END:variables
 }

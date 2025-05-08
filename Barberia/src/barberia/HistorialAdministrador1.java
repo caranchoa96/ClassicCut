@@ -20,7 +20,7 @@ DefaultTableModel modeloCitas;
         
         modeloCitas = new DefaultTableModel(col, 0);
         initComponents();
-        
+        setLocationRelativeTo(null);
         for (int i = 0; i < Cita.listaCitas.size(); i++){
             String hora = Cita.listaCitas.get(i).getHora();
             String precio = Cita.listaCitas.get(i).getPrecio();
@@ -77,7 +77,7 @@ DefaultTableModel modeloCitas;
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 651, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(285, 285, 285)
+                .addGap(271, 271, 271)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)

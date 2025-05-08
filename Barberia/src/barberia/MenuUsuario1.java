@@ -20,8 +20,11 @@ public class MenuUsuario1 extends javax.swing.JFrame {
      * Creates new form MenuUsuario1
      */
     public MenuUsuario1() {
+
         initComponents();
+        setLocationRelativeTo(null);
         int i=0;
+        
             for(String a : ListaDePrecios1.servicios){
                 sbConfirmacion.append(a).append("\n");
             }

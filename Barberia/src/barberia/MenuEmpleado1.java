@@ -19,10 +19,10 @@ static String encargadoe;
     public MenuEmpleado1() {
         setTitle(encargadoe);
         String col[] = {"Hora","Precio","Servicio","Cliente","Fecha"};
-        
+
         modeloCitas = new DefaultTableModel(col, 0);
         initComponents();
-        
+        setLocationRelativeTo(null);
         for (int i = 0; i < Cita.listaCitas.size(); i++){
             if(Cita.listaCitas.get(i).getEncargado().equals(encargadoe)){
                 String hora = Cita.listaCitas.get(i).getHora();

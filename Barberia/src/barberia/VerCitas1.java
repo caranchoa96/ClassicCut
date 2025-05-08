@@ -21,8 +21,9 @@ public class VerCitas1 extends javax.swing.JFrame {
         String col[] = {"Hora","Precio","Servicio","Encargado","Fecha"};
         
         modeloCitas = new DefaultTableModel(col, 0);
+
         initComponents();
-        
+        setLocationRelativeTo(null);
         for (int i = 0; i < Cita.listaCitas.size(); i++){
             if(Cita.listaCitas.get(i).getCliente().equals(clientee)){
                 String hora = Cita.listaCitas.get(i).getHora();

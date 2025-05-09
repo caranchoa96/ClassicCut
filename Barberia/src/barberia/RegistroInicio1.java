@@ -214,7 +214,6 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                 mostrarCitasEmpleado.setVisible(true);
             }
         }
-        JOptionPane.showMessageDialog(null, "Por favor rellene todos los campos");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -237,6 +236,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(null, "Cliente agregado con exito");
                         jTextField1.setText("");
                         jTextField2.setText("");
+                        Cliente.guardarCliente();
                         ListaDePrecios1 a = new ListaDePrecios1();
                         this.dispose();
                         a.setVisible(true);

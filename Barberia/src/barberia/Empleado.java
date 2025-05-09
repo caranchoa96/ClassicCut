@@ -10,11 +10,11 @@ import java.util.ArrayList;
  *
  * @author E304
  */
-public class Empleado extends Usuario{
+public class Empleado{
     static ArrayList<Empleado> empleados = new ArrayList<>();
-    
+    String nombre;
     public Empleado(String nombre) {
-        super(nombre);
+        this.nombre = nombre;
     }
     Empleado(){}
 }

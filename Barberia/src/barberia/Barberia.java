@@ -23,12 +23,6 @@ public class Barberia {
     public static void main(String[] args)  {
         Bienvenidoa1 i = new Bienvenidoa1();
         
-        Empleado nuevoEmpleado = new Empleado("Joseph");
-        Empleado.empleados.add(nuevoEmpleado);
-        nuevoEmpleado = new Empleado("Gabriel");
-        Empleado.empleados.add(nuevoEmpleado);
-        nuevoEmpleado = new Empleado("Santiago");
-        Empleado.empleados.add(nuevoEmpleado);
         List<Cita> citasCargadas = Cita.cargarCita();
         for(Cita citasAPasar : citasCargadas){
             Cita.listaCitas.add(citasAPasar);
@@ -36,6 +30,10 @@ public class Barberia {
         List<Cliente> clientesCargados = Cliente.cargarCliente();
         for(Cliente clientesAPasar : clientesCargados){
             Cliente.clientes.add(clientesAPasar);
+        }
+        List<Empleado> empleadosCargados = Empleado.cargarEmpleado();
+        for(Empleado empleadosAPasar : empleadosCargados){
+            Empleado.empleados.add(empleadosAPasar);
         }
         i.setVisible(true);
     }

@@ -4,6 +4,7 @@
  */
 package barberia;
 
+import javax.swing.ImageIcon;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -22,6 +23,7 @@ static String encargadoe;
 
         modeloCitas = new DefaultTableModel(col, 0);
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("casa.png")).getImage());
         setLocationRelativeTo(null);
         for (int i = 0; i < Cita.listaCitas.size(); i++){
             if(Cita.listaCitas.get(i).getEncargado().equals(encargadoe)){

@@ -544,7 +544,6 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         }else{
             deleteServicio("Tapper Fade", 22000);
         }
-
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed

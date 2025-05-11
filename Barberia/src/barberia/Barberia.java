@@ -43,5 +43,4 @@ public class Barberia {
         a.dispose();
         i.setVisible(true);
     }
-    
 }

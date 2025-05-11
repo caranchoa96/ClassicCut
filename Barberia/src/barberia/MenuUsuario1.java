@@ -4,6 +4,7 @@
  */
 package barberia;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -22,6 +23,7 @@ public class MenuUsuario1 extends javax.swing.JFrame {
     public MenuUsuario1() {
 
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("casa.png")).getImage());
         setLocationRelativeTo(null);
         int i=0;
         

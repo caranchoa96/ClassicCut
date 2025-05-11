@@ -6,6 +6,7 @@ package barberia;
  */
 
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -21,6 +22,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
     public RegistroInicio1() {
 
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("casa.png")).getImage());
         setTitle("Acceso");
         setLocationRelativeTo(null);
         
@@ -184,6 +186,8 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                 HistorialAdministrador1 a = new HistorialAdministrador1();
                 this.dispose();
                 a.setVisible(true);
+            }else{
+                    JOptionPane.showMessageDialog(null, "Administrador no valido");
             }
         }if(Barberia.SesionActual.equals("Cliente")){
         for(Cliente cliente: Cliente.clientes){
@@ -204,7 +208,9 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                 }
                 break;
 
-            }
+            }else{
+            JOptionPane.showMessageDialog(null, "Usuario no valido");
+        }
         }
         }
         if(Barberia.SesionActual.equals("Empleado")){
@@ -215,6 +221,9 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                     MenuEmpleado1 mostrarCitasEmpleado = new MenuEmpleado1();
 
                     mostrarCitasEmpleado.setVisible(true);
+                    break;
+                }else{
+                    JOptionPane.showMessageDialog(null, "Empleado no valido");
                     break;
                 }
             }

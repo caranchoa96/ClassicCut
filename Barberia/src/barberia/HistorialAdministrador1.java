@@ -4,6 +4,7 @@
  */
 package barberia;
 
+import javax.swing.ImageIcon;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -20,6 +21,7 @@ DefaultTableModel modeloCitas;
         
         modeloCitas = new DefaultTableModel(col, 0);
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("casa.png")).getImage());
         setLocationRelativeTo(null);
         for (int i = 0; i < Cita.listaCitas.size(); i++){
             String hora = Cita.listaCitas.get(i).getHora();

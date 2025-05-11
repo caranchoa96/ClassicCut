@@ -6,6 +6,7 @@ package barberia;
 //JOPTION PARA CUANDO TERMINAS EL REGISTRO Y INICIO DE SESION
 //JOPTION PANE PARA DESPUES DE LO ULTIMO DE USUARIO Y PARA ESPECIALIDAD DE EMPLEADO DESPUES DE INICIAR SESION
 
+import java.util.List;
 import javax.swing.JFrame;
 
 
@@ -21,13 +22,20 @@ public class Barberia {
      */
     public static void main(String[] args)  {
         Bienvenidoa1 i = new Bienvenidoa1();
+        
+        List<Cita> citasCargadas = Cita.cargarCita();
+        for(Cita citasAPasar : citasCargadas){
+            Cita.listaCitas.add(citasAPasar);
+        }
+        List<Cliente> clientesCargados = Cliente.cargarCliente();
+        for(Cliente clientesAPasar : clientesCargados){
+            Cliente.clientes.add(clientesAPasar);
+        }
+        List<Empleado> empleadosCargados = Empleado.cargarEmpleado();
+        for(Empleado empleadosAPasar : empleadosCargados){
+            Empleado.empleados.add(empleadosAPasar);
+        }
         i.setVisible(true);
-        Empleado nuevoEmpleado = new Empleado("Joseph");
-        Empleado.empleados.add(nuevoEmpleado);
-        nuevoEmpleado = new Empleado("Gabriel");
-        Empleado.empleados.add(nuevoEmpleado);
-        nuevoEmpleado = new Empleado("Santiago");
-        Empleado.empleados.add(nuevoEmpleado);
     }
     
     static void cerrarSesion(JFrame a){
@@ -35,4 +43,5 @@ public class Barberia {
         a.dispose();
         i.setVisible(true);
     }
+    
 }

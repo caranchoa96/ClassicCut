@@ -233,7 +233,7 @@ public class MenuUsuario1 extends javax.swing.JFrame {
         Cita.listaCitas.add(nuevaCita);
         JOptionPane.showMessageDialog(null, "Cita agendada exitosamente");
         this.dispose();
-        
+        Cita.guardarCita();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

@@ -7,6 +7,8 @@ package barberia;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.SpinnerNumberModel;
+import java.time.LocalDateTime;  
+import java.time.format.DateTimeFormatter;  
 
 /**
  *
@@ -19,11 +21,23 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     SpinnerNumberModel modeloSpinnerHora = new SpinnerNumberModel();
     MenuUsuario1 confirmarCita;
     VerCitas1 mirarCita;
+    int diaActual;
+    int mesActual;
+    int añoActual;
+    
     /**
      * Creates new form ListaDePrecios1
      */
     public ListaDePrecios1() {
-
+        LocalDateTime myDateObj = LocalDateTime.now();
+        
+        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String fechaActual = myDateObj.format(myFormatObj);
+        String[] fechaActualPartida = fechaActual.split("/", 3);
+        diaActual = Integer.parseInt(fechaActualPartida[0]);
+        mesActual = Integer.parseInt(fechaActualPartida[1]);
+        añoActual = Integer.parseInt(fechaActualPartida[2]);
+        System.out.println(fechaActual);
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Por favor escoja un servicio");
@@ -667,7 +681,12 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         confirmarCita = new MenuUsuario1();
         int horascroll = (int) modeloSpinnerHora.getValue();
-        if(jTextField1.getText().matches("^([0-2][0-9]|3[0-1])(\\/|-)(0[1-9]|1[0-2])\\2(\\d{4})$")&&horascroll>0&&horascroll<13&&precio!=0){
+        String[] fechaCliente = jTextField1.getText().split("/",3);
+        int diaCliente = Integer.parseInt(fechaCliente[0]);
+        int mesCliente = Integer.parseInt(fechaCliente[1]);
+        int añoCliente = Integer.parseInt(fechaCliente[2]);
+        
+        if(jTextField1.getText().matches("^([0-2][0-9]|3[0-1])(\\/|-)(0[1-9]|1[0-2])\\2(\\d{4})$")&&diaCliente>diaActual&&mesCliente>mesActual&&añoCliente>añoActual&&horascroll>0&&horascroll<13&&precio!=0){
             confirmarCita.setFecha(jTextField1.getText());
             hora = horascroll+":00 "+ jComboBox1.getSelectedItem();
             confirmarCita.setHora(hora);

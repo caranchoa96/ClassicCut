@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
 import javax.swing.SpinnerNumberModel;
 import java.time.LocalDateTime;  
 import java.time.format.DateTimeFormatter;  
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -25,6 +26,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     int mesActual;
     int añoActual;
     
+    
     /**
      * Creates new form ListaDePrecios1
      */
@@ -39,6 +41,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         añoActual = Integer.parseInt(fechaActualPartida[2]);
         System.out.println(fechaActual);
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("casa.png")).getImage());
         setLocationRelativeTo(null);
         setTitle("Por favor escoja un servicio");
         modeloSpinnerHora = new SpinnerNumberModel();
@@ -47,6 +50,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
 
         
         jSpinner1.setModel(modeloSpinnerHora);
+        
     }
 
     /**
@@ -733,7 +737,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         int mesCliente = Integer.parseInt(fechaCliente[1]);
         int añoCliente = Integer.parseInt(fechaCliente[2]);
         
-        if(jTextField1.getText().matches("^([0-2][0-9]|3[0-1])(\\/|-)(0[1-9]|1[0-2])\\2(\\d{4})$")&&diaCliente>diaActual&&mesCliente>mesActual&&añoCliente>añoActual&&horascroll>0&&horascroll<13&&precio!=0){
+        if(jTextField1.getText().matches("^([0-2][0-9]|3[0-1])(\\/|-)(0[1-9]|1[0-2])\\2(\\d{4})$")&&diaCliente>=diaActual&&mesCliente>=mesActual&&añoCliente>=añoActual&&horascroll>=0&&horascroll<13&&precio!=0){            
             confirmarCita.setFecha(jTextField1.getText());
             hora = horascroll+":00 "+ jComboBox1.getSelectedItem();
             confirmarCita.setHora(hora);
@@ -741,6 +745,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(null,"Por favor, rellene todos los campos.");
         }
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -760,7 +765,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 
                 if(ae==JOptionPane.YES_OPTION){
                     Barberia.cerrarSesion(this);
-                    if(mirarCita.isVisible()){mirarCita.dispose();}
+                    if(confirmarCita.isVisible()){confirmarCita.dispose();}
                     servicios.clear();
                     precio = 0;
                 }        
@@ -768,9 +773,9 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
 
     private void jCheckBox25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox25ActionPerformed
         if(jCheckBox25.isSelected()){
-            addServicio("barba",10000);
+            addServicio("Barba",10000);
         }else{
-            deleteServicio("barba", 10000);
+            deleteServicio("Barba", 10000);
         }                                     
     }//GEN-LAST:event_jCheckBox25ActionPerformed
 
@@ -796,7 +801,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
        if(jCheckBox20.isSelected()){
             addServicio("Sistema Deeping",70000);
         }else{
-            deleteServicio("Sistema Deeing", 70000);
+            deleteServicio("Sistema Deeping", 70000);
         }                                          
         
     }//GEN-LAST:event_jCheckBox20ActionPerformed
@@ -810,8 +815,14 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox27ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-                mirarCita = new VerCitas1();
-                mirarCita.setVisible(true);
+                
+                if(!VerCitas1.activo){
+                    mirarCita = new VerCitas1();
+                    mirarCita.setVisible(true);
+                    }else{
+                    VerCitas1.activo = false;
+                    mirarCita.dispose();
+                }
     }//GEN-LAST:event_jButton3ActionPerformed
     public void addServicio(String servicio,int precios){
         if(servicios.isEmpty()){

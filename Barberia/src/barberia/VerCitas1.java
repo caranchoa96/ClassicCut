@@ -13,6 +13,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class VerCitas1 extends javax.swing.JFrame {
     DefaultTableModel modeloCitas;
+    static boolean activo = false;
     /**
      * Creates new form VerCitas
      */
@@ -37,6 +38,7 @@ public class VerCitas1 extends javax.swing.JFrame {
             }
 
         }
+        activo = true;
     }
 
     /**

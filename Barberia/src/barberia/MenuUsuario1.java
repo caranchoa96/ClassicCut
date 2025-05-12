@@ -46,7 +46,7 @@ public class MenuUsuario1 extends javax.swing.JFrame {
             }
 
 
-            jTextField5.setText(""+ListaDePrecios1.precio);
+            jTextField5.setText(ListaDePrecios1.precio+"$");
 
     }
     public void setFecha( String huu) {

@@ -468,11 +468,11 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 918, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 551, Short.MAX_VALUE)
         );
 
         pack();
@@ -688,8 +688,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox65ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         JOptionPane.showMessageDialog(null, "¿Esta seguro que quiere cerrar sesion?");
-                int ae = JOptionPane.showConfirmDialog(null, "¿Esta seguro que quiere cerrar sesion?","Cierre de sesion", JOptionPane.YES_NO_OPTION);
+               int ae = JOptionPane.showConfirmDialog(null, "¿Esta seguro que quiere cerrar sesion?","Cierre de sesion", JOptionPane.YES_NO_OPTION);
                 
                 if(ae==JOptionPane.YES_OPTION){
                     Barberia.cerrarSesion(this);

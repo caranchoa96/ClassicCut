@@ -688,10 +688,15 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox65ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Barberia.cerrarSesion(this);
-        if(confirmarCita.isVisible()){confirmarCita.dispose();}
-        servicios.clear();
-        precio = 0;
+         JOptionPane.showMessageDialog(null, "¿Esta seguro que quiere cerrar sesion?");
+                int ae = JOptionPane.showConfirmDialog(null, "¿Esta seguro que quiere cerrar sesion?","Cierre de sesion", JOptionPane.YES_NO_OPTION);
+                
+                if(ae==JOptionPane.YES_OPTION){
+                    Barberia.cerrarSesion(this);
+                    if(confirmarCita.isVisible()){confirmarCita.dispose();}
+                    servicios.clear();
+                    precio = 0;
+                }        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jCheckBox25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox25ActionPerformed

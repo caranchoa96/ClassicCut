@@ -137,6 +137,7 @@ public class Bienvenidoa1 extends javax.swing.JFrame {
         a.setTitle("Cliente");
         this.dispose();
         Barberia.SesionActual = "Cliente";
+        
         a.setVisible(true);
 
     }//GEN-LAST:event_jButton3ActionPerformed

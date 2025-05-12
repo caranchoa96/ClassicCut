@@ -18,6 +18,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     String hora= "";
     SpinnerNumberModel modeloSpinnerHora = new SpinnerNumberModel();
     MenuUsuario1 confirmarCita;
+    VerCitas1 mirarCita;
     /**
      * Creates new form ListaDePrecios1
      */
@@ -91,6 +92,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
         setForeground(java.awt.Color.darkGray);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -692,7 +694,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 
                 if(ae==JOptionPane.YES_OPTION){
                     Barberia.cerrarSesion(this);
-                    if(confirmarCita.isVisible()){confirmarCita.dispose();}
+                    if(mirarCita.isVisible()){mirarCita.dispose();}
                     servicios.clear();
                     precio = 0;
                 }        
@@ -742,8 +744,8 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox27ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-                VerCitas1 a = new VerCitas1();
-                a.setVisible(true);
+                
+                mirarCita.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
     public void addServicio(String servicio,int precios){
         if(servicios.isEmpty()){

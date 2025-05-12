@@ -206,21 +206,10 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         for(Cliente cliente: Cliente.clientes){
             if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
                 JOptionPane.showMessageDialog(null, "Bienvenido, "+ jTextField1.getText());
-                int ae = JOptionPane.showConfirmDialog(null, "¿Desea agendar una nueva cita?","Sesion iniciada.", JOptionPane.YES_NO_OPTION);
-                
-                if(ae==JOptionPane.YES_OPTION){
                     ListaDePrecios1 a = new ListaDePrecios1();
                     Barberia.ClienteActual = jTextField1.getText();
                     this.dispose();
                     a.setVisible(true);
-                }
-                if(ae==JOptionPane.NO_OPTION){
-                    VerCitas1.clientee = getjTextField1();
-                    VerCitas1 a = new VerCitas1();
-                    a.setVisible(true);
-                }
-                break;
-
             }else{
                 JOptionPane.showMessageDialog(null, "¡Ups, alguno de los campos esta incorrecto, Intentalo nuevamente!");
                 break;

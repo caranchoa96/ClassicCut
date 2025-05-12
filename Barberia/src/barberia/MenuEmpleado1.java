@@ -55,6 +55,7 @@ static String encargadoe;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setForeground(new java.awt.Color(51, 51, 51));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 

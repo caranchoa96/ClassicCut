@@ -88,6 +88,7 @@ public class MenuUsuario1 extends javax.swing.JFrame {
         setTitle("Cierre la ventana para cancelar");
         setBackground(new java.awt.Color(51, 51, 51));
         setForeground(new java.awt.Color(51, 51, 51));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 

@@ -137,7 +137,7 @@ public class Bienvenidoa1 extends javax.swing.JFrame {
         a.setTitle("Admin");
         a.getjButton2().setVisible(false);
         this.dispose();
-        Barberia.SesionActual = "Admin";
+        Barberia.SesionActual = "Antonio";
         a.setVisible(true);
         
         

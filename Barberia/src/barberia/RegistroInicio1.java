@@ -227,9 +227,6 @@ public class RegistroInicio1 extends javax.swing.JFrame {
 
                     mostrarCitasEmpleado.setVisible(true);
                     break;
-                }else{
-                    JOptionPane.showMessageDialog(null, "Empleado no valido");
-                    break;
                 }
             }
         }
@@ -240,7 +237,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         if(Barberia.SesionActual.equals("Cliente")){
             for (Cliente cliente : Cliente.clientes) {
                 if(cliente.nombre.equals(getjTextField1())){
-                    JOptionPane.showMessageDialog(null, "Usuario ya registrado");
+                    JOptionPane.showMessageDialog(null, "El Usuario ya esta registrado.");
                     jTextField1.setText("");
                     jTextField2.setText("");
                     ae = true;
@@ -252,7 +249,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                         Cliente nuevoCliente = new Cliente(getjTextField1(),getjTextField2());
                         Cliente.clientes.add(nuevoCliente);
                         Barberia.ClienteActual = getjTextField1();
-                        JOptionPane.showMessageDialog(null, "Cliente agregado con exito");
+                        JOptionPane.showMessageDialog(null, "Cliente agregado exitosamente.");
                         jTextField1.setText("");
                         jTextField2.setText("");
                         Cliente.guardarCliente();
@@ -262,26 +259,26 @@ public class RegistroInicio1 extends javax.swing.JFrame {
                 
             }else{
                 if(ae==false){
-                    JOptionPane.showMessageDialog(null, "Error de nombre o contraseña");
+                    JOptionPane.showMessageDialog(null, "Error en el nombre o contraseña.");
                 }
             }
         }
         if(Barberia.SesionActual.equals("Empleado")){    
             for (Empleado empleado : Empleado.empleados) {
                 if(empleado.nombre.equals(getjTextField1())){
-                    JOptionPane.showMessageDialog(null, "Empleado ya registrado");
+                    JOptionPane.showMessageDialog(null, "El Empleado ya esta registrado.");
                     jTextField1.setText("");
                     jTextField2.setText("");
                     ae = true;
                 }
             }
-            if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi")&&ae==false){
+            if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi2025")&&ae==false){
                 Empleado nuevoEmpleado = new Empleado(getjTextField1());
                 Empleado.empleados.add(nuevoEmpleado);
                 Empleado.guardarEmpleado();
-                JOptionPane.showMessageDialog(null, "Empleado agregado con exito");
+                JOptionPane.showMessageDialog(null, "¡Empleado ha sido agregado con exito!");
             }else{
-                JOptionPane.showMessageDialog(null, "Empleado no valido");
+                JOptionPane.showMessageDialog(null, "Empleado no valido.");
             }
         }
         

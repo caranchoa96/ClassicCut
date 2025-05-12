@@ -93,7 +93,7 @@ public class MenuUsuario1 extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Confirmacion de cita");
+        jLabel2.setText("▼ Confirmacion de cita ▼");
 
         jLabel1.setFont(new java.awt.Font("sansserif", 2, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -141,6 +141,12 @@ public class MenuUsuario1 extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jTextArea1.setText("Manicure + Seventh");
         jScrollPane1.setViewportView(jTextArea1);
+
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -237,6 +243,10 @@ public class MenuUsuario1 extends javax.swing.JFrame {
         this.dispose();
         Cita.guardarCita();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments

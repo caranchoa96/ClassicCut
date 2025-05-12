@@ -3,3 +3,5 @@
 7:00 PM;32000;Tapper Fade+barba;Joseph;Izaid;13/05/2025
 6:00 AM;22000;Tapper Fade;Joseph;VergasCalientes;22/06/2025
 5:00 PM;238000;Iluminaciones+Cuadricular;Santiago;VergasCalientes;22/05/2025
+5:00 PM;20000;Manicure;Gabriel;Joseph;22/02/2026
+6:00 PM;35000;Low Fade+barba;Abril;Joseph;22/06/2025

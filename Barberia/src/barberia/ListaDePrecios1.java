@@ -134,6 +134,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox1.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox1.setText("Tapper Fade: 22,000$");
+        jCheckBox1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
@@ -144,6 +145,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox2.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox2.setText("Low Fade: 25,000$");
+        jCheckBox2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox2ActionPerformed(evt);
@@ -154,6 +156,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox3.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox3.setText("Classic: 12,000$");
+        jCheckBox3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox3.setName("va"); // NOI18N
         jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -165,6 +168,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox4.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox4.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox4.setText("Mullet: 15,000$");
+        jCheckBox4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox4ActionPerformed(evt);
@@ -175,6 +179,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox5.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox5.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox5.setText("BuzzCut: 17,000$");
+        jCheckBox5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox5ActionPerformed(evt);
@@ -185,6 +190,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox6.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox6.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox6.setText("Mohicano: 20,000$");
+        jCheckBox6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox6ActionPerformed(evt);
@@ -195,6 +201,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox7.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox7.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox7.setText("Seventh: 20,000$");
+        jCheckBox7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox7ActionPerformed(evt);
@@ -205,6 +212,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox8.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox8.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox8.setText("Cuadricular: 18,000$");
+        jCheckBox8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox8ActionPerformed(evt);
@@ -215,6 +223,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox9.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox9.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox9.setText("             Manicure: 20,000$");
+        jCheckBox9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox9ActionPerformed(evt);
@@ -225,6 +234,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox10.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox10.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox10.setText("            Pedicure: 25,000$");
+        jCheckBox10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox10ActionPerformed(evt);
@@ -235,6 +245,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox11.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox11.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox11.setText("Combo tradicional: 40,000$");
+        jCheckBox11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox11ActionPerformed(evt);
@@ -245,6 +256,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox13.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox13.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox13.setText("Semi-permanentes (Manos): 45,000$");
+        jCheckBox13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox13ActionPerformed(evt);
@@ -255,6 +267,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox14.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox14.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox14.setText("Semi-permanentes (Pies): 50,000$");
+        jCheckBox14.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox14ActionPerformed(evt);
@@ -265,6 +278,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox16.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox16.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox16.setText("Combo Semi-permanente: 90,000$");
+        jCheckBox16.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox16ActionPerformed(evt);
@@ -275,6 +289,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox18.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox18.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox18.setText("           Manos Press On: 75,000$");
+        jCheckBox18.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox18ActionPerformed(evt);
@@ -284,17 +299,19 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
 
         jCheckBox19.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox19.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jCheckBox19.setText("            Esmaltado Acrilico: 100,000$");
+        jCheckBox19.setText("       Esmaltado Acrilico: 100,000$");
+        jCheckBox19.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox19ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, -1, -1));
+        jPanel1.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 220, -1));
 
         jCheckBox12.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox12.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox12.setText("Blw.corto: 25,000$");
+        jCheckBox12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox12ActionPerformed(evt);
@@ -305,6 +322,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox15.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox15.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox15.setText("Blw.mediano:35,000$");
+        jCheckBox15.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox15ActionPerformed(evt);
@@ -315,6 +333,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox22.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox22.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox22.setText("Blw.largo: 50,000$");
+        jCheckBox22.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox22ActionPerformed(evt);
@@ -325,6 +344,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox23.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox23.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox23.setText("   Keratina: 250,000$");
+        jCheckBox23.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox23ActionPerformed(evt);
@@ -335,6 +355,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox24.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox24.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox24.setText("      Tinte: 250,000$");
+        jCheckBox24.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox24ActionPerformed(evt);
@@ -345,6 +366,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox62.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox62.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox62.setText("Cejas: 10,000$");
+        jCheckBox62.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox62.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox62ActionPerformed(evt);
@@ -355,6 +377,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox64.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox64.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox64.setText("Masaje: 40,000$");
+        jCheckBox64.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox64.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox64ActionPerformed(evt);
@@ -368,8 +391,11 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jLabel7.setText("Servicios Adicionales:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 90, 148, -1));
 
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("Listo!");
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -387,10 +413,16 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Hora:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, -1, -1));
+
+        jTextField1.setBackground(new java.awt.Color(204, 204, 204));
+        jTextField1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jTextField1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, 203, -1));
 
+        jComboBox1.setBackground(new java.awt.Color(204, 204, 204));
         jComboBox1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AM", "PM" }));
+        jComboBox1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -406,25 +438,33 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox65.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox65.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox65.setText("Pestañas: 25,000$");
+        jCheckBox65.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox65.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox65ActionPerformed(evt);
             }
         });
         jPanel1.add(jCheckBox65, new org.netbeans.lib.awtextra.AbsoluteConstraints(698, 198, 129, -1));
+
+        jSpinner1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jSpinner1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, -1));
 
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton1.setText("Cerrar Sesion.");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 30, 120, 20));
 
         jCheckBox25.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox25.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox25.setText("Barba: 10,000$");
+        jCheckBox25.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox25ActionPerformed(evt);
@@ -435,6 +475,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox26.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox26.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox26.setText("Aminoacido: 200,000$");
+        jCheckBox26.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox26ActionPerformed(evt);
@@ -445,6 +486,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox17.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox17.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox17.setText("Personalizado: 25,000$");
+        jCheckBox17.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox17ActionPerformed(evt);
@@ -455,6 +497,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox20.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox20.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox20.setText("           Sistema Deeping: 70,000$");
+        jCheckBox20.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox20ActionPerformed(evt);
@@ -465,6 +508,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox27.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox27.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jCheckBox27.setText("Iluminaciones: 220,000$");
+        jCheckBox27.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jCheckBox27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox27ActionPerformed(evt);
@@ -472,13 +516,16 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         });
         jPanel1.add(jCheckBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 324, -1, -1));
 
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton3.setText("Ver mis reservas.");
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 140, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 30, 160, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -86,6 +86,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jCheckBox17 = new javax.swing.JCheckBox();
         jCheckBox20 = new javax.swing.JCheckBox();
         jCheckBox27 = new javax.swing.JCheckBox();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
@@ -102,7 +103,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Lista de Precios Classic Cuts :)");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 17, -1, 38));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, 38));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -397,13 +398,13 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jPanel1.add(jCheckBox65, new org.netbeans.lib.awtextra.AbsoluteConstraints(698, 198, 129, -1));
         jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, -1));
 
-        jButton1.setText("Cerrar sesion");
+        jButton1.setText("Cerrar Sesion.");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 30, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, -1, -1));
 
         jCheckBox25.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox25.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -454,6 +455,14 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jCheckBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 324, -1, -1));
+
+        jButton3.setText("Ver mis reservas.");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 140, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -727,6 +736,11 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
             deleteServicio("Iluminaciones",220000);
         }                                         
     }//GEN-LAST:event_jCheckBox27ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+                VerCitas1 a = new VerCitas1();
+                a.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
     public void addServicio(String servicio,int precios){
         if(servicios.isEmpty()){
             servicios.add(servicio);
@@ -753,6 +767,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox11;

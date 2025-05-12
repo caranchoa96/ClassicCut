@@ -13,12 +13,11 @@ import javax.swing.table.DefaultTableModel;
  */
 public class VerCitas1 extends javax.swing.JFrame {
     DefaultTableModel modeloCitas;
-    static String clientee;
     /**
      * Creates new form VerCitas
      */
     public VerCitas1() {
-        setTitle(clientee);
+        setTitle(Barberia.ClienteActual);
         String col[] = {"Hora","Precio","Servicio","Encargado","Fecha"};
         
         modeloCitas = new DefaultTableModel(col, 0);
@@ -27,7 +26,7 @@ public class VerCitas1 extends javax.swing.JFrame {
         setIconImage(new ImageIcon(getClass().getResource("casa.png")).getImage());
         setLocationRelativeTo(null);
         for (int i = 0; i < Cita.listaCitas.size(); i++){
-            if(Cita.listaCitas.get(i).getCliente().equals(clientee)){
+            if(Cita.listaCitas.get(i).getCliente().equals(Barberia.ClienteActual)){
                 String hora = Cita.listaCitas.get(i).getHora();
                 String precio = Cita.listaCitas.get(i).getPrecio();
                 String servicio = Cita.listaCitas.get(i).getServicio();

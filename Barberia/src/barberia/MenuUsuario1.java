@@ -118,6 +118,7 @@ public class MenuUsuario1 extends javax.swing.JFrame {
         jLabel6.setText("Precio");
 
         jTextField2.setEditable(false);
+        jTextField2.setBackground(new java.awt.Color(204, 204, 204));
         jTextField2.setText("5:00 PM");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,24 +127,32 @@ public class MenuUsuario1 extends javax.swing.JFrame {
         });
 
         jTextField3.setEditable(false);
+        jTextField3.setBackground(new java.awt.Color(204, 204, 204));
         jTextField3.setText("17/03/2025");
 
         jTextField5.setEditable(false);
+        jTextField5.setBackground(new java.awt.Color(204, 204, 204));
         jTextField5.setText("40.000");
 
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setText("Ok");
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
+        jScrollPane1.setBackground(new java.awt.Color(204, 204, 204));
+
         jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jTextArea1.setText("Manicure + Seventh");
         jScrollPane1.setViewportView(jTextArea1);
 
+        jComboBox1.setBackground(new java.awt.Color(204, 204, 204));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -186,8 +195,8 @@ public class MenuUsuario1 extends javax.swing.JFrame {
                         .addGap(31, 31, 31))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(116, 116, 116))
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(117, 117, 117))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -215,9 +224,9 @@ public class MenuUsuario1 extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
-                .addGap(56, 56, 56)
-                .addComponent(jButton2)
-                .addGap(73, 73, 73))
+                .addGap(47, 47, 47)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(71, 71, 71))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

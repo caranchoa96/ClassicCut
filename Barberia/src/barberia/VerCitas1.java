@@ -60,6 +60,7 @@ public class VerCitas1 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setForeground(new java.awt.Color(51, 51, 51));
 
+        jTable1.setBackground(new java.awt.Color(204, 204, 204));
         jTable1.setModel(modeloCitas);
         jScrollPane1.setViewportView(jTable1);
 

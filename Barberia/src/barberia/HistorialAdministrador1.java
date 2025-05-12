@@ -58,6 +58,7 @@ DefaultTableModel modeloCitas;
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
+        jTable1.setBackground(new java.awt.Color(204, 204, 204));
         jTable1.setModel(modeloCitas);
         jScrollPane1.setViewportView(jTable1);
 

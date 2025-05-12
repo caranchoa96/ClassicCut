@@ -270,13 +270,13 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
 
         jCheckBox19.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox19.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jCheckBox19.setText("            Esmaltado Acrilico: 100,000$");
+        jCheckBox19.setText("       Esmaltado Acrilico: 100,000$");
         jCheckBox19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox19ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, -1, -1));
+        jPanel1.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 220, -1));
 
         jCheckBox12.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox12.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -354,8 +354,11 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jLabel7.setText("Servicios Adicionales:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 90, 148, -1));
 
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("Listo!");
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -373,8 +376,12 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Hora:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, -1, -1));
+
+        jTextField1.setBackground(new java.awt.Color(204, 204, 204));
+        jTextField1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, 203, -1));
 
+        jComboBox1.setBackground(new java.awt.Color(204, 204, 204));
         jComboBox1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AM", "PM" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -398,15 +405,20 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jCheckBox65, new org.netbeans.lib.awtextra.AbsoluteConstraints(698, 198, 129, -1));
+
+        jSpinner1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, -1));
 
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton1.setText("Cerrar Sesion.");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(742, 30, 120, 20));
 
         jCheckBox25.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox25.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -458,19 +470,25 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         });
         jPanel1.add(jCheckBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 324, -1, -1));
 
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton3.setText("Ver mis reservas.");
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 30, 140, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 30, 160, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 918, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 906, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

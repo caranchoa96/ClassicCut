@@ -49,8 +49,9 @@ public class Bienvenidoa1 extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(51, 51, 51));
 
         jButton3.setBackground(new java.awt.Color(204, 204, 204));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jButton3.setText("Soy cliente");
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -58,8 +59,9 @@ public class Bienvenidoa1 extends javax.swing.JFrame {
         });
 
         jButton1.setBackground(new java.awt.Color(204, 204, 204));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jButton1.setText("Soy administrador");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -67,8 +69,9 @@ public class Bienvenidoa1 extends javax.swing.JFrame {
         });
 
         jButton2.setBackground(new java.awt.Color(204, 204, 204));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jButton2.setText("Soy empleado");
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -80,7 +83,7 @@ public class Bienvenidoa1 extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("▼ Bienvenido a Classic Cuts ▼");
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Peluqueria & Barberia ©");
 

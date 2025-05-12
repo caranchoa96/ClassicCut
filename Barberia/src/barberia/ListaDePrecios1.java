@@ -198,23 +198,23 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
 
         jCheckBox9.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox9.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jCheckBox9.setText("Manicure: 20,000$");
+        jCheckBox9.setText("             Manicure: 20,000$");
         jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox9ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 138, 180, -1));
+        jPanel1.add(jCheckBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 138, 220, -1));
 
         jCheckBox10.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox10.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jCheckBox10.setText("Pedicure: 25,000$");
+        jCheckBox10.setText("            Pedicure: 25,000$");
         jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox10ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 164, 180, -1));
+        jPanel1.add(jCheckBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 164, 220, -1));
 
         jCheckBox11.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox11.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -224,7 +224,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 jCheckBox11ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 190, -1, -1));
+        jPanel1.add(jCheckBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 190, 220, -1));
 
         jCheckBox13.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox13.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -244,7 +244,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 jCheckBox14ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 242, -1, -1));
+        jPanel1.add(jCheckBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 242, 220, -1));
 
         jCheckBox16.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox16.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -258,17 +258,17 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
 
         jCheckBox18.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox18.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jCheckBox18.setText("Manos Press On: 75,000$");
+        jCheckBox18.setText("           Manos Press On: 75,000$");
         jCheckBox18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox18ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 172, -1));
+        jPanel1.add(jCheckBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 220, -1));
 
         jCheckBox19.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox19.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jCheckBox19.setText("Esmaltado Acrilico: 100,000$");
+        jCheckBox19.setText("            Esmaltado Acrilico: 100,000$");
         jCheckBox19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox19ActionPerformed(evt);
@@ -284,7 +284,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 jCheckBox12ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 134, 149, -1));
+        jPanel1.add(jCheckBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 134, 160, -1));
 
         jCheckBox15.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox15.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -294,7 +294,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 jCheckBox15ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 166, 149, -1));
+        jPanel1.add(jCheckBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 166, 160, -1));
 
         jCheckBox22.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox22.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -304,7 +304,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 jCheckBox22ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 198, 149, -1));
+        jPanel1.add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 198, 160, -1));
 
         jCheckBox23.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox23.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -314,7 +314,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 jCheckBox23ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 226, 149, -1));
+        jPanel1.add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 226, 160, -1));
 
         jCheckBox24.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox24.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -350,7 +350,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Servicios Adicionales:");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(724, 87, 148, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 90, 148, -1));
 
         jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("Listo!");
@@ -438,13 +438,13 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
 
         jCheckBox20.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox20.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jCheckBox20.setText("Sistema Deeping: 70,000$");
+        jCheckBox20.setText("           Sistema Deeping: 70,000$");
         jCheckBox20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox20ActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 172, -1));
+        jPanel1.add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 220, -1));
 
         jCheckBox27.setBackground(new java.awt.Color(0, 153, 153));
         jCheckBox27.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
@@ -468,11 +468,11 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 931, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 555, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

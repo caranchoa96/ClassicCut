@@ -29,12 +29,12 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" pref="931" max="32767" attributes="0"/>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" pref="555" max="32767" attributes="0"/>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -275,14 +275,14 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Manicure: 20,000$"/>
+            <Property name="text" type="java.lang.String" value="             Manicure: 20,000$"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox9ActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="228" y="138" width="180" height="-1"/>
+              <AbsoluteConstraints x="228" y="138" width="220" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -294,14 +294,14 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Pedicure: 25,000$"/>
+            <Property name="text" type="java.lang.String" value="            Pedicure: 25,000$"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox10ActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="228" y="164" width="180" height="-1"/>
+              <AbsoluteConstraints x="228" y="164" width="220" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -320,7 +320,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="228" y="190" width="-1" height="-1"/>
+              <AbsoluteConstraints x="228" y="190" width="220" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -358,7 +358,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="228" y="242" width="-1" height="-1"/>
+              <AbsoluteConstraints x="228" y="242" width="220" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -389,14 +389,14 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Manos Press On: 75,000$"/>
+            <Property name="text" type="java.lang.String" value="           Manos Press On: 75,000$"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox18ActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="230" y="300" width="172" height="-1"/>
+              <AbsoluteConstraints x="230" y="300" width="220" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -408,7 +408,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Esmaltado Acrilico: 100,000$"/>
+            <Property name="text" type="java.lang.String" value="            Esmaltado Acrilico: 100,000$"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox19ActionPerformed"/>
@@ -434,7 +434,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="490" y="134" width="149" height="-1"/>
+              <AbsoluteConstraints x="490" y="134" width="160" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -453,7 +453,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="490" y="166" width="149" height="-1"/>
+              <AbsoluteConstraints x="490" y="166" width="160" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -472,7 +472,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="490" y="198" width="149" height="-1"/>
+              <AbsoluteConstraints x="490" y="198" width="160" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -491,7 +491,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="490" y="226" width="149" height="-1"/>
+              <AbsoluteConstraints x="490" y="226" width="160" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -567,7 +567,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="724" y="87" width="148" height="-1"/>
+              <AbsoluteConstraints x="710" y="90" width="148" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -773,14 +773,14 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Sistema Deeping: 70,000$"/>
+            <Property name="text" type="java.lang.String" value="           Sistema Deeping: 70,000$"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox20ActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="230" y="330" width="172" height="-1"/>
+              <AbsoluteConstraints x="230" y="330" width="220" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>

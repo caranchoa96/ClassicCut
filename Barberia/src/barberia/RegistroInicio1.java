@@ -6,6 +6,9 @@ package barberia;
  */
 
 
+import java.text.ParseException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -27,6 +30,10 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         
         
+    }
+
+    public JLabel getjLabel5() {
+        return jLabel5;
     }
 
     /**
@@ -199,6 +206,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    boolean ae = false;    
         if(Barberia.SesionActual.equals("Antonio")){    
             if(jTextField1.getText().equals("Antonio")&&jTextField2.getText().equals("Profesor")){
                 HistorialAdministrador1 a = new HistorialAdministrador1();
@@ -210,75 +218,94 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         }if(Barberia.SesionActual.equals("Cliente")){
         for(Cliente cliente: Cliente.clientes){
             if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
-                JOptionPane.showMessageDialog(null, "Bienvenido, "+ jTextField1.getText());
+                ae = true;
+                break;
+            }
+        }
+            if(!getjTextField1().equals("")&&!getjTextField2().equals("")&&ae){
+                try {
+                    JOptionPane.showMessageDialog(null, "Bienvenido, "+ jTextField1.getText());
                     ListaDePrecios1 a = new ListaDePrecios1();
                     Barberia.ClienteActual = jTextField1.getText();
                     this.dispose();
                     a.setVisible(true);
+                } catch (ParseException ex) {
+                    Logger.getLogger(RegistroInicio1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }else{
+                JOptionPane.showMessageDialog(null, "Usuario incorrecto");
             }
-        }
+        
         }
         if(Barberia.SesionActual.equals("Empleado")){
             for (Empleado empleado : Empleado.empleados) {
+                if(jTextField1.getText().equals(empleado.nombre)){
+                    ae = true;
+                    break;
+                }
+            }
                 
-                if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi")&&empleado.nombre.equals(getjTextField1())){
+                if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi2025")&&ae){
                     MenuEmpleado1.encargadoe = getjTextField1();
                     MenuEmpleado1 mostrarCitasEmpleado = new MenuEmpleado1();
 
                     mostrarCitasEmpleado.setVisible(true);
-                    break;
+                }else{
+                    JOptionPane.showMessageDialog(null, "Empleado no valido");
                 }
-            }
+            
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         boolean ae = false;
         if(Barberia.SesionActual.equals("Cliente")){
-            for (Cliente cliente : Cliente.clientes) {
-                if(cliente.nombre.equals(getjTextField1())){
-                    JOptionPane.showMessageDialog(null, "El Usuario ya esta registrado.");
-                    jTextField1.setText("");
-                    jTextField2.setText("");
+            for(Cliente cliente : Cliente.clientes){
+                if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
                     ae = true;
                     break;
                 }
             }
-            if(!getjTextField1().equals("")&&!getjTextField2().equals("")&&ae==false){
+            if(!getjTextField1().equals("")&&!getjTextField2().equals("")&&!ae){
                 
-                        Cliente nuevoCliente = new Cliente(getjTextField1(),getjTextField2());
-                        Cliente.clientes.add(nuevoCliente);
-                        Barberia.ClienteActual = getjTextField1();
-                        JOptionPane.showMessageDialog(null, "Cliente agregado exitosamente.");
-                        jTextField1.setText("");
-                        jTextField2.setText("");
-                        Cliente.guardarCliente();
-                        ListaDePrecios1 a = new ListaDePrecios1();
-                        this.dispose();
-                        a.setVisible(true);
-                
-            }else{
-                if(ae==false){
-                    JOptionPane.showMessageDialog(null, "Error en el nombre o contraseña.");
-                }
-            }
-        }
-        if(Barberia.SesionActual.equals("Empleado")){    
-            for (Empleado empleado : Empleado.empleados) {
-                if(empleado.nombre.equals(getjTextField1())){
-                    JOptionPane.showMessageDialog(null, "El Empleado ya esta registrado.");
+                    
+            
+                try {
+                    Cliente nuevoCliente = new Cliente(getjTextField1(),getjTextField2());
+                    Cliente.clientes.add(nuevoCliente);
+                    Barberia.ClienteActual = getjTextField1();
+                    JOptionPane.showMessageDialog(null, "Cliente agregado exitosamente.");
                     jTextField1.setText("");
                     jTextField2.setText("");
+                    Cliente.guardarCliente();
+                    ListaDePrecios1 a = new ListaDePrecios1();
+                    this.dispose();
+                    a.setVisible(true);
+                } catch (ParseException ex) {
+                    Logger.getLogger(RegistroInicio1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+            }else{
+                    JOptionPane.showMessageDialog(null, "Error en el nombre o contraseña.");
+            }
+            
+        }
+        if(Barberia.SesionActual.equals("Empleado")){    
+            for(Empleado empleado:Empleado.empleados){
+                if(jTextField1.getText().equals(empleado.nombre)){
                     ae = true;
+                    break;
                 }
             }
-            if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi2025")&&ae==false){
+            
+            
+            if(!getjTextField1().equals("")&&jTextField2.getText().equals("Aezakmi2025")&&!ae){
                 Empleado nuevoEmpleado = new Empleado(getjTextField1());
                 Empleado.empleados.add(nuevoEmpleado);
                 Empleado.guardarEmpleado();
                 JOptionPane.showMessageDialog(null, "¡Empleado ha sido agregado con exito!");
             }else{
-                JOptionPane.showMessageDialog(null, "Empleado no valido.");
+                JOptionPane.showMessageDialog(null, "Empleado incorrecto");
             }
         }
         

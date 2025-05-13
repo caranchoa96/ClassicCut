@@ -142,6 +142,7 @@ public class Bienvenidoa1 extends javax.swing.JFrame {
         RegistroInicio1 a = new RegistroInicio1();
         a.getjLabel3().setText("Acceso Administrador");
         a.setTitle("Admin");
+        a.getjLabel5().setVisible(false);
         a.getjButton2().setVisible(false);
         this.dispose();
         Barberia.SesionActual = "Antonio";

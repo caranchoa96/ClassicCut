@@ -217,7 +217,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
             }
         }if(Barberia.SesionActual.equals("Cliente")){
         for(Cliente cliente: Cliente.clientes){
-            if(cliente.nombre.equals(jTextField1.getText().trim())&&cliente.contraseña.equals(jTextField2.getText().trim())){
+            if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
                 ae = true;
                 break;
             }
@@ -261,7 +261,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         boolean ae = false;
         if(Barberia.SesionActual.equals("Cliente")){
             for(Cliente cliente : Cliente.clientes){
-                if(cliente.nombre.equals(jTextField1.getText().trim())&&cliente.contraseña.equals(jTextField2.getText().trim())){
+                if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
                     ae = true;
                     break;
                 }

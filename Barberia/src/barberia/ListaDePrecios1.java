@@ -774,6 +774,7 @@ public class ListaDePrecios1 extends javax.swing.JFrame {
                 if(ae==JOptionPane.YES_OPTION){
                     Barberia.cerrarSesion(this);
                     if(confirmarCita.isVisible()){confirmarCita.dispose();}
+                    if(mirarCita.isVisible()){mirarCita.dispose();}
                     servicios.clear();
                     precio = 0;
                 }        

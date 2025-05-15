@@ -208,7 +208,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     boolean ae = false;    
         if(Barberia.SesionActual.equals("Antonio")){    
-            if(jTextField1.getText().equals("Antonio")&&jTextField2.getText().equals("Profesor")){
+            if(jTextField1.getText().trim().equals("Antonio")&&jTextField2.getText().trim().equals("Profesor")){
                 HistorialAdministrador1 a = new HistorialAdministrador1();
                 this.dispose();
                 a.setVisible(true);
@@ -217,7 +217,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
             }
         }if(Barberia.SesionActual.equals("Cliente")){
         for(Cliente cliente: Cliente.clientes){
-            if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
+            if(cliente.nombre.equals(jTextField1.getText().trim())&&cliente.contraseña.equals(jTextField2.getText().trim())){
                 ae = true;
                 break;
             }
@@ -239,7 +239,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         }
         if(Barberia.SesionActual.equals("Empleado")){
             for (Empleado empleado : Empleado.empleados) {
-                if(jTextField1.getText().equals(empleado.nombre)){
+                if(jTextField1.getText().trim().equals(empleado.nombre)){
                     ae = true;
                     break;
                 }
@@ -261,7 +261,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         boolean ae = false;
         if(Barberia.SesionActual.equals("Cliente")){
             for(Cliente cliente : Cliente.clientes){
-                if(cliente.nombre.equals(jTextField1.getText())&&cliente.contraseña.equals(jTextField2.getText())){
+                if(cliente.nombre.equals(jTextField1.getText().trim())&&cliente.contraseña.equals(jTextField2.getText().trim())){
                     ae = true;
                     break;
                 }
@@ -292,7 +292,7 @@ public class RegistroInicio1 extends javax.swing.JFrame {
         }
         if(Barberia.SesionActual.equals("Empleado")){    
             for(Empleado empleado:Empleado.empleados){
-                if(jTextField1.getText().equals(empleado.nombre)){
+                if(jTextField1.getText().trim().equals(empleado.nombre)){
                     ae = true;
                     break;
                 }
@@ -333,18 +333,18 @@ public class RegistroInicio1 extends javax.swing.JFrame {
     }
 
     public String getjTextField1() {
-        if(!jTextField1.getText().matches("[A-Za-z]+")){
+        if(!jTextField1.getText().trim().matches("[A-Za-z]+")){
             return "";
         }else{
-            return jTextField1.getText();
+            return jTextField1.getText().trim();
         }
     }
 
     public String getjTextField2() {
-        if(!jTextField2.getText().matches("^(?=\\w*\\d)(?=\\w*[A-Z])(?=\\w*[a-z])\\S{8,16}$")){
+        if(!jTextField2.getText().trim().matches("^(?=\\w*\\d)(?=\\w*[A-Z])(?=\\w*[a-z])\\S{8,16}$")){
             return "";
         }else{
-            return jTextField2.getText();
+            return jTextField2.getText().trim();
         }
     }
     /**
